@@ -27,7 +27,7 @@ class Producto extends React.Component {
     }
     
     obtenerProductoPorId(id){
-        let resp = axios.get("http://localhost:8080/productos/" + id);
+        let resp = axios.get("http://20.206.76.228:8080/productos/" + id);
         resp.then((x) => {
         //x.data[0] esta accediendo al data del del array con la posicion 0
         this.setState({productoInd: x.data[0]});

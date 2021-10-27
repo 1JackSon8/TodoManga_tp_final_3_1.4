@@ -70,7 +70,7 @@ class ListarPopulares extends React.Component {
 
     obtenerProductos(){
 
-        let resp = axios.get("http://localhost:8080/productos/");
+        let resp = axios.get("http://20.206.76.228:8080/productos/");
         resp.then((x) => {
             this.setState({productos: x.data});
         }).catch((err) => {
@@ -80,7 +80,7 @@ class ListarPopulares extends React.Component {
     }
 
     obtenerProductoPorId(id){
-        let resp = axios.get("http://localhost:8080/productos/" + id);
+        let resp = axios.get("http://20.206.76.228:8080/productos/" + id);
         resp.then((x) => {
             this.setState({productoInd: x.data});
         }).catch((err) => {
@@ -154,7 +154,7 @@ class ListarProductos extends React.Component{
 
     obtenerProductos(){
 
-        let resp = axios.get("http://localhost:8080/productos/");
+        let resp = axios.get("http://20.206.76.228:8080/productos/");
         resp.then((x) => {
             this.setState({productos: x.data});
         }).catch((err) => {
@@ -164,7 +164,7 @@ class ListarProductos extends React.Component{
     }
 
     obtenerProductoPorId(id){
-        let resp = axios.get("http://localhost:8080/productos/" + id);
+        let resp = axios.get("http://20.206.76.228:8080/productos/" + id);
         resp.then((x) => {
             this.setState({productoInd: x.data});
         }).catch((err) => {
